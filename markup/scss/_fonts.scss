@@ -82,6 +82,7 @@
     line-height: 20px;
 }
 @mixin textXs {
+    @include not400;
     font-size: 12px;
     line-height: 16px;
 }

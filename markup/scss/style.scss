@@ -3,8 +3,18 @@
 @import "vars.scss";
 
 /* Main style sheet begins here */
+.wrapper{
+    max-width: 400px;
+    width: 100%;
+    
+    margin-top: 100px;
+    margin-left: 100px;
+}
 .h1{
-    @include h1;
+    @include but6pxClicked;
+    &:hover{
+        @include but8pxVar1Clicked;
+    }
 }
 
 .footer{
