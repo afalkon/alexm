@@ -1,0 +1,27 @@
+{
+  "name": "eset__template",
+  "version": "1.0.0",
+  "description": "Eset NOD32 antivirus product page",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-minify-inline": "^1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "readable-stream": "^3.6.0",
+    "rename": "^1.0.4",
+    "sass": "^1.49.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

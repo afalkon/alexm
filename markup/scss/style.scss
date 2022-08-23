@@ -1,0 +1,17 @@
+@import "global.scss";
+@import "fonts.scss";
+@import "vars.scss";
+
+/* Main style sheet begins here */
+.h1{
+    @include h1;
+}
+
+.footer{
+    margin-top: auto;
+}
+
+
+/* Main style sheet ends here */
+
+@import "media.scss"

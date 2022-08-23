@@ -1,0 +1,87 @@
+
+// Noto Sans font import
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap');
+
+// Noto Sans mixins
+@mixin not400 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+}
+@mixin not600 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin not700 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+}
+@mixin not800 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 800;
+}
+
+// Noto Sans style mixins
+@mixin h1 {
+    @include not800;
+    font-size: 64px;
+    line-height: 77px;
+}
+@mixin h2 {
+    @include not700;
+    font-size: 45px;
+    line-height: 54px;
+}
+@mixin h3 {
+    @include not700;
+    font-size: 32px;
+    line-height: 39px;
+}
+@mixin h4 {
+    @include not600;
+    font-size: 24px;
+    line-height: 29px;
+}
+@mixin h5 {
+    @include not700;
+    font-size: 20px;
+    line-height: 24px;
+}
+@mixin h6 {
+    @include not700;
+    font-size: 16px;
+    line-height: 19px;
+}
+@mixin textBase {
+    @include not400;
+    font-size: 16px;
+    line-height: 24px;
+}
+@mixin text3xl {
+    @include not400;
+    font-size: 30px;
+    line-height: 36px;
+}
+@mixin text2xl {
+    @include not400;
+    font-size: 24px;
+    line-height: 32px;
+}
+@mixin textXl {
+    @include not400;
+    font-size: 20px;
+    line-height: 28px;
+}
+@mixin textLg {
+    @include not400;
+    font-size: 18px;
+    line-height: 28px;
+}
+@mixin textSm {
+    @include not400;
+    font-size: 14px;
+    line-height: 20px;
+}
+@mixin textXs {
+    font-size: 12px;
+    line-height: 16px;
+}
