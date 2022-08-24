@@ -304,3 +304,167 @@ li{
 .notification__muted{
     background-color: #727A83;
 }
+
+// Slider navigation button styles
+@mixin sliderNavLeft {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: $nightDark2;
+    border-radius: 50%;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../img/elements/arrowLeft.svg');
+        width: 11px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover{
+        background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
+    }
+}
+@mixin sliderNavRight {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: $nightDark2;
+    border-radius: 50%;
+    &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../img/elements/arrowRight.svg');
+        width: 11px;
+        height: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &:hover{
+        background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
+    }
+}
+
+// Tag styles
+
+// Tag with image and text
+.tag{
+    max-width: 170px;
+    width: 100%;
+    padding: 21px 10px 21px 19px;
+    display: flex;
+    align-items: center;
+    background: $nightDark2;
+    border: 1px solid $nightDark1;
+    border-radius: 16px;
+    overflow: hidden;
+    &__image{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+    }
+    &__text{
+        @include textLg;
+        color: $nightBlue2;
+    }
+}
+// Sidebar tag styles
+.sidebarTag{
+    max-width: 313px;
+    width: 100%;
+    padding: 21px 18px 21px 19px;
+    display: flex;
+    align-items: center;
+    background: $nightDark2;
+    border: 1px solid $nightDark1;
+    border-radius: 16px;
+    overflow: hidden;
+    &__image{
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-right: 8px;
+    }
+    &__text{
+        @include textLg;
+        color: $nightBlue2;
+    }
+    &__count{
+        padding: 4px 16px;
+        background: $nightDark1;
+        border-radius: 16px;
+        @include textSm;
+        color: $nightBlue2;
+        margin-left: auto;
+    }
+}
+// Simple text tag
+.textTag{
+    max-width: 112px;
+    width: 100%;
+    padding: 12px 18px 12px 19px;
+    display: flex;
+    align-items: center;
+    background: $nightDark2;
+    border: 1px solid $nightDark1;
+    border-radius: 16px;
+    overflow: hidden;
+    &__text{
+        @include textLg;
+        color: $nightBlue2;
+    }
+}
+
+// Subscribtion form styles
+.subscribeForm{
+    max-width: 392px;
+    width: 100%;
+    position: relative;
+    &__input{
+        max-width: 392px;
+        width: 100%;
+        padding: 19px 135px 19px 22px;
+        background: $nightDark1;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        @include textXs;
+        color: $nightBlue3;
+        &::placeholder{
+            @include textXs;
+            color: $nightBlue3;
+            opacity: 0.6;
+        }
+    }
+    &__button{
+        position: absolute;
+        padding: 10px 33px 10px 16px;
+        background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
+        border-radius: 8px;
+        right: 9px;
+        top: 50%;
+        transform: translate(0, -50%);
+        border: none;
+        outline: none;
+        @include textSm;
+        color: #FFFFFF;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            right: 16px;
+            top: 15px;
+            background-image: url('../img/elements/arrowRight.svg');
+        }
+    }
+}

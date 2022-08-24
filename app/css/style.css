@@ -79,10 +79,150 @@ li {
   background-color: #727A83;
 }
 
+.tag {
+  max-width: 170px;
+  width: 100%;
+  padding: 21px 10px 21px 19px;
+  display: flex;
+  align-items: center;
+  background: #131C31;
+  border: 1px solid #222F43;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.tag__image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+.tag__text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #94A9C9;
+}
+
+.sidebarTag {
+  max-width: 313px;
+  width: 100%;
+  padding: 21px 18px 21px 19px;
+  display: flex;
+  align-items: center;
+  background: #131C31;
+  border: 1px solid #222F43;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.sidebarTag__image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+.sidebarTag__text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #94A9C9;
+}
+.sidebarTag__count {
+  padding: 4px 16px;
+  background: #222F43;
+  border-radius: 16px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #94A9C9;
+  margin-left: auto;
+}
+
+.textTag {
+  max-width: 112px;
+  width: 100%;
+  padding: 12px 18px 12px 19px;
+  display: flex;
+  align-items: center;
+  background: #131C31;
+  border: 1px solid #222F43;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.textTag__text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: #94A9C9;
+}
+
+.subscribeForm {
+  max-width: 392px;
+  width: 100%;
+  position: relative;
+}
+.subscribeForm__input {
+  max-width: 392px;
+  width: 100%;
+  padding: 19px 135px 19px 22px;
+  background: #222F43;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7F92B0;
+}
+.subscribeForm__input::placeholder {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #7F92B0;
+  opacity: 0.6;
+}
+.subscribeForm__button {
+  position: absolute;
+  padding: 10px 33px 10px 16px;
+  background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
+  border-radius: 8px;
+  right: 9px;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: none;
+  outline: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+.subscribeForm__button::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  right: 16px;
+  top: 15px;
+  background-image: url("../img/elements/arrowRight.svg");
+}
+
 /* Main style sheet begins here */
 .wrapper {
   max-width: 400px;
   width: 100%;
+  display: block;
   margin-top: 100px;
   margin-left: 100px;
 }
@@ -126,6 +266,27 @@ li {
   right: -2px;
   border-radius: 50px;
   z-index: -1;
+  background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
+}
+
+.slider__button {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  background: #131C31;
+  border-radius: 50%;
+}
+.slider__button::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/elements/arrowRight.svg");
+  width: 11px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider__button:hover {
   background: linear-gradient(82.19deg, #0EA5EA 5.2%, #0BD1D1 100.36%);
 }
 
