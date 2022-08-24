@@ -10,7 +10,7 @@ let gulp = require('gulp'),
 
 /* HTML task to reload browser on changes */
 gulp.task('html', function(){
-    return gulp.src('markup/**/*.html')
+    return gulp.src('markup/*.html')
     .pipe(browserSync.reload({stream: true}))
 });
 

@@ -11,9 +11,9 @@
     margin-left: 100px;
 }
 .h1{
-    @include but6pxClicked;
+    @include but50pxStillSmall;
     &:hover{
-        @include but8pxVar1Clicked;
+        @include but50pxClickedSmall;
     }
 }
 
