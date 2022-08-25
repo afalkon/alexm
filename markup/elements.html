@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        .element {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .element__heading {
+            font-size: 25px;
+            line-height: 30px;
+            margin-bottom: 15px;
+        }
+
+        .element__preview {
+            background-color: #0F172A;
+            padding: 20px;
+            border-radius: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .element__codeDesc {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 30px;
+            padding-top: 20px;
+        }
+
+        .element__code {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #B8CDEB;
+            display: block;
+            width: 100%;
+            overflow: scroll;
+        }
+    </style>
+    <header class="header">
+
+    </header>
+    <div class="element">
+        <div class="element__heading">Category card</div>
+        <div class="element__preview">
+            <a href="#" class="categoryCard" style="background-image: url('img/elements/categoryBg.jpg');">
+                <div class="categoryCard__gradient">
+                    <h6 class="categoryCard__heading">Sport</h6>
+                    <div class="categoryCard__count">38 Articles</div>
+                </div>
+            </a>
+        </div>
+        <div class="element__codeDesc">SCSS code</div>
+        <pre><code class="element__code">
+            .categoryCard{
+                max-width: 169px;
+                width: 100%;
+                min-height: 206px;
+                border-radius: 8px;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                &__gradient{
+                    max-width: 169px;
+                    width: 100%;
+                    min-height: 206px;
+                    background: linear-gradient(181.24deg, rgba(0, 14, 27, 0) 23.14%, rgba(0, 14, 27, 0.96) 98.94%);
+                    border-radius: 8px;
+                    padding: 19px 16px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &__heading{
+                    margin-top: auto;
+                    @include h6;
+                    color: $nightWhite;
+                }
+                &__count{
+                    @include textXs;
+                    color: $nightBlue2;
+                }
+            }
+        </code></pre>
+        <div class="element__codeDesc"></div>
+    </div>
+
+    <div class="element">
+        <div class="element__heading"></div>
+        <div class="element__preview"></div>
+        <div class="element__codeDesc"></div>
+        <code class="element__code"></code>
+        <div class="element__codeDesc"></div>
+        <code class="element__code"></code>
+        <div class="element__codeDesc"></div>
+    </div>
+
+
+    <footer class="footer">
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

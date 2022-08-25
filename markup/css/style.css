@@ -353,6 +353,208 @@ li {
   opacity: 1;
 }
 
+.skillCard {
+  max-width: 293px;
+  width: 100%;
+  min-height: 188px;
+}
+.skillCard__iconBg {
+  width: 60px;
+  height: 60px;
+  background-color: #0B1222;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 16px;
+}
+.skillCard__icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skillCard__heading {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #E6F0FF;
+  margin-bottom: 16px;
+}
+.skillCard__text {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #66768F;
+}
+
+.categoryCard {
+  max-width: 169px;
+  width: 100%;
+  min-height: 206px;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.categoryCard__gradient {
+  max-width: 169px;
+  width: 100%;
+  min-height: 206px;
+  background: linear-gradient(181.24deg, rgba(0, 14, 27, 0) 23.14%, rgba(0, 14, 27, 0.96) 98.94%);
+  border-radius: 8px;
+  padding: 19px 16px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryCard__heading {
+  margin-top: auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #E6F0FF;
+}
+.categoryCard__count {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #94A9C9;
+}
+
+.cardPostLarge {
+  max-width: 575px;
+  width: 100%;
+  height: 509px;
+  border-radius: 16px;
+  background-color: #131C31;
+  border: 1px solid #222F43;
+  padding: 20px 20px 25px 20px;
+}
+.cardPostLarge__img {
+  position: relative;
+  max-width: 535px;
+  width: 100%;
+  height: 301px;
+  border-radius: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 20px;
+}
+.cardPostLarge__iconBg {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  right: 15px;
+  top: 24px;
+  border-radius: 50%;
+  background-color: #0F172A;
+}
+.cardPostLarge__icon {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.cardPostLarge__info {
+  display: flex;
+  margin-bottom: 10px;
+}
+.cardPostLarge__hashTag {
+  margin-right: 24px;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66768F;
+}
+.cardPostLarge__time {
+  margin-left: auto;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66768F;
+  padding-left: 23px;
+  position: relative;
+}
+.cardPostLarge__time::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/elements/time.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 0;
+}
+.cardPostLarge__heading {
+  display: inline-block;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #E6F0FF;
+  margin-bottom: 32px;
+}
+.cardPostLarge__author {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+}
+.cardPostLarge__author--img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.cardPostLarge__author--name {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #66768F;
+}
+.cardPostLarge__author--date {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66768F;
+}
+.cardPostLarge__readMore {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #0F172A;
+  position: relative;
+  margin-left: auto;
+}
+.cardPostLarge__readMore::before {
+  content: "Read more";
+  position: absolute;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66768F;
+  width: 80px;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
 /* Main style sheet begins here */
 .wrapper {
   max-width: 400px;

@@ -608,3 +608,178 @@ li{
         }
     }
 }
+
+// Skill Card styles
+.skillCard{
+    max-width: 293px;
+    width: 100%;
+    min-height: 188px;
+    &__iconBg{
+        width: 60px;
+        height: 60px;
+        background-color: $nightDark4;
+        border-radius: 50%;
+        position: relative;
+        margin-bottom: 16px;
+    }
+    &__icon{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__heading{
+        @include h5;
+        color: $nightWhite;
+        margin-bottom: 16px;
+    }
+    &__text{
+        @include textBase;
+        color: $nightBlue4;
+    }
+}
+
+// Category card styles
+.categoryCard{
+    max-width: 169px;
+    width: 100%;
+    min-height: 206px;
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__gradient{
+        max-width: 169px;
+        width: 100%;
+        min-height: 206px;
+        background: linear-gradient(181.24deg, rgba(0, 14, 27, 0) 23.14%, rgba(0, 14, 27, 0.96) 98.94%);
+        border-radius: 8px;
+        padding: 19px 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__heading{
+        margin-top: auto;
+        @include h6;
+        color: $nightWhite;
+    }
+    &__count{
+        @include textXs;
+        color: $nightBlue2;
+    }
+}
+
+// Card post large styles
+.cardPostLarge{
+    max-width: 575px;
+    width: 100%;
+    height: 509px;
+    border-radius: 16px;
+    background-color: $nightDark2;
+    border: 1px solid $nightDark1;
+    padding: 20px 20px 25px 20px;
+    &__img{
+        position: relative;
+        max-width: 535px;
+        width: 100%;
+        height: 301px;
+        border-radius: 16px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 20px;
+    }
+    &__iconBg{
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        right: 15px;
+        top: 24px;
+        border-radius: 50%;
+        background-color: $nightDark3;
+    }
+    &__icon{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__info{
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &__hashTag{
+        margin-right: 24px;
+        @include textSm;
+        color: $nightBlue4;
+    }
+    &__time{
+        margin-left: auto;
+        @include textSm;
+        color: $nightBlue4;
+        padding-left: 23px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/elements/time.svg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            left: 0;
+            top: 0;
+        }
+    }
+    &__heading{
+        display: inline-block;
+        @include h4;
+        color: $nightWhite;
+        margin-bottom: 32px;
+    }
+    &__author{
+        display: flex;
+        align-items: center;
+        padding-right: 50px;
+    }
+    &__author--img{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        margin-right: 12px;
+    }
+    &__author--name{
+        @include h6;
+        color: $nightBlue4;
+    }
+    &__author--date{
+        @include textSm;
+        color: $nightBlue4;
+    }
+    &__readMore{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $nightDark3;
+        position: relative;
+        margin-left: auto;
+        &::before{
+            content: 'Read more';
+            position: absolute;
+            @include textSm;
+            color: $nightBlue4;
+            width: 80px;
+            top: 50%;
+            left: 50%;
+            transform: translate(0, -50%);
+        }
+    }
+}
