@@ -218,6 +218,141 @@ li {
   background-image: url("../img/elements/arrowRight.svg");
 }
 
+@keyframes dayOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dayOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes nightOn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes nightOff {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.switch {
+  position: relative;
+  width: 40px;
+  height: 22px;
+  background-color: #222F43;
+  border-radius: 11px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.switch.day .switch__circle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #D8E6FB;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 2px;
+  transition: all 0.3s ease;
+}
+.switch.day .switch__circle::before {
+  animation-name: dayOn;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/elements/daySwitch.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.switch.day .switch__circle::after {
+  animation-name: nightOff;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/elements/nightSwitch.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.switch.night .switch__circle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #D8E6FB;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 20px;
+  transition: all 0.3s ease;
+}
+.switch.night .switch__circle::before {
+  animation-name: dayOff;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/elements/daySwitch.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.switch.night .switch__circle::after {
+  animation-name: nightOn;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+  transition: all 0.3s ease;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/elements/nightSwitch.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
 /* Main style sheet begins here */
 .wrapper {
   max-width: 400px;
